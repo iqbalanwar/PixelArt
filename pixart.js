@@ -35,7 +35,7 @@ function colorSwatch() {
         swatch.style.width = "60px";
         swatch.style.margin = "10px";
         swatch.style.display = "inline-block";
-        swatch.style.backgroundColor = "tan";
+        swatch.style.backgroundColor = "silver";
         document.querySelector('.controls').appendChild(swatch);
     }
 }
@@ -43,7 +43,7 @@ colorSwatch();
 
 // SETS THE COLOR OF THE SWATCHES TO THE LAST THREE
 document.querySelector('#set-color').addEventListener('click',lastThreeColors);
-let arrayColors = ['tan','tan','tan'];
+let arrayColors = ['silver','silver','silver'];
 function lastThreeColors(event) {
     arrayColors.push(document.querySelector('#color-field').value);
     arrayColors.shift();
